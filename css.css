@@ -1,0 +1,237 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.assignment1 {
+  background-color: #0d5825;
+  padding: 50px 0px 150px 50px;
+  margin: 0% 100% 50% 25%;
+  border: 0px;
+  width: 600px;
+  height: 600px;
+}
+.first_picture {
+  width: 150px;
+  z-index: 1;
+  transform: rotate(-30deg);
+  position: relative;
+  top: 100px;
+  left: 165px;
+  transition-duration: 2s;
+  padding-top: 40px;
+}
+.second_picture {
+  width: 150px;
+  z-index: 2;
+  transform: rotate(-15deg);
+  position: relative;
+  top: 100px;
+  left: 65px;
+  transition-duration: 2s;
+  padding-top: 40px;
+}
+.third_picture {
+  width: 150px;
+  z-index: 3;
+  transform: rotate(5deg);
+  position: relative;
+  top: 120px;
+  left: -35px;
+  transition-duration: 0.5s;
+  padding-top: 40px;
+}
+.text {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  text-align: center;
+  line-height: 0;
+  padding: 0px 0px 0px 0px;
+}
+.first_picture:hover {
+  transition-duration: 0.5s;
+  -o-transform: translateY(-20px) rotate(-30deg);
+  -ms-transform: translateY(-20px) rotate(-30deg);
+  -moz-transform: translateY(-20px) rotate(-30deg);
+  -webkit-transform: translateY(-20px) rotate(-30deg);
+  transform: translateY(-20px) rotate(-30deg);
+  transition-property: all;
+}
+.second_picture:hover {
+  transition-duration: 0.5s;
+  -o-transform: translateY(-20px) rotate(-15deg);
+  -ms-transform: translateY(-20px) rotate(-15deg);
+  -moz-transform: translateY(-20px) rotate(-15deg);
+  -webkit-transform: translateY(-20px) rotate(-15deg);
+  transform: translateY(-20px) rotate(-15deg);
+  transition-property: all;
+}
+.third_picture:hover {
+  transition-duration: 0.5s;
+  -o-transform: translateY(-20px) rotate(5deg);
+  -ms-transform: translateY(-20px) rotate(5deg);
+  -moz-transform: translateY(-20px) rotate(5deg);
+  -webkit-transform: translateY(-20px) rotate(5deg);
+  transform: translateY(-20px) rotate(5deg);
+  transition-property: all;
+}
+
+.Red_square {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  bottom: 550px;
+  z-index: 1;
+  left: 550px;
+  opacity: 0.5;
+}
+.Blue_square {
+  width: 100px;
+  height: 100px;
+  background: rgb(118, 118, 227);
+  position: relative;
+  bottom: 600px;
+  left: 600px;
+  z-index: 3;
+}
+.Green_square {
+  width: 100px;
+  height: 100px;
+  background: green;
+  position: relative;
+  bottom: 650px;
+  z-index: 2;
+  left: 650px;
+  opacity: 0.5;
+}
+
+.box2 {
+  width: 600px;
+  height: 600px;
+}
+
+.hw3 {
+  height: 600px;
+  background-color: grey;
+  width: 60px;
+  position: fixed;
+  top: 50px;
+  bottom: 50px;
+  text-transform: uppercase;
+  transition-duration: 0s;
+}
+.list {
+  display: inline-block;
+  font-size: 20pt;
+  margin-top: 20px;
+  visibility: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:visited {
+  color: white;
+}
+a:link {
+  color: black;
+}
+a {
+  display: block;
+  line-height: 20px;
+  position: relative;
+  left: 20px;
+  top: -30px;
+  text-decoration: none;
+}
+a:hover {
+  color: goldenrod;
+  transition-duration: 0.5s;
+  transition-property: all;
+}
+
+li::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+  margin-right: 10px;
+  transform: translate(0, -50%) scaleY(1.5) rotate(45deg);
+  border: solid;
+  border-color: black;
+  border-width: 3px;
+}
+
+.Menu {
+  padding: top 30px;
+  bottom: 30px;
+  font-size: 20pt;
+  color: white;
+  height: 200px;
+  width: 100px;
+  position: absolute;
+  top: 230px;
+  left: 0px;
+  writing-mode: vertical-lr;
+}
+
+.hw3:hover {
+  width: 300px;
+  transition-duration: 1s;
+  transition-property: all;
+}
+.hw3:hover > .Menu {
+  left: 300px;
+  transition-duration: 0.5s;
+  transition-property: all;
+}
+.hw3:hover > .list {
+  display: inline-block;
+  visibility: visible;
+  transition-duration: 1s;
+}
+
+.hw4 { width:100px;
+  height:100px;
+  position:relative;
+  bottom:700px;
+  left:400px;
+}
+.square {width:33%;
+height:33%;
+position:relative;
+background-color: red;
+top:0;
+animation-name: runing;
+animation-duration:3s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+}
+
+@keyframes runing {
+  0%{background-color:red;}
+  25% {background-color:blue; 
+    -o-transform: translateY(66px);
+    -ms-transform: translateY(66px);
+    -moz-transform: translateY(66px);
+    -webkit-transform: translateY(66px);
+    transform: translateY(66px);}
+  50% {
+    -o-transform: translate(66px,66px);
+    -ms-transform: translate(66px,66px);
+    -moz-transform: translateY(66px,66px);
+    -webkit-transform: translateY(66px,66px);
+    transform: translate(66px,66px); background-color:green;}
+75% {o-transform: translateX(66px);
+  -ms-transform: translateX(66px);
+  -moz-transform: translateX(66px);
+  -webkit-transform: translateX(66px);
+  transform: translateX(66px); background-color: yellow;}
+
+  100%{background-color: red;}
+}
